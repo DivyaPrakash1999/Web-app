@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #2a2a72, #009ffd);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-name {
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search button {
+    background: #2a2a72;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weather {
+    display: none;
+}
+
+.weather-icon {
+    width: 80px; /* Adjusted size for the main weather icon */
+    height: auto;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.col img {
+    width: 40px; /* Set a fixed size for wind and humidity icons */
+    height: 40px; /* Maintain aspect ratio */
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.forecast-container-wrapper {
+    width: 90%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; /* Prevent wrapping to ensure all cards stay in one line */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    padding: 15px 0;
+}
+
+.forecast-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    margin: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.forecast-card img {
+    width: 60px; /* Adjust icon size for forecast */
+}
+
+.articles {
+    width: 90%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+footer {
+    width: 90%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icon {
+    width: 30px; /* Adjust size of social icons */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Add spacing between icons */
+}
+
+.articles ul {
+    list-style: disc; /* Change to bullet points */
+    margin-left: 20px; /* Add indentation */
+}
