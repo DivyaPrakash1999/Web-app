@@ -1,6 +1,6 @@
 # Web Application and web pages
-Opent home.html or index.html file 
-This are beginner projects for web developmrnt 
+-Opent home.html or index.html file 
+-This are beginner projects for web developmrnt 
 HTML5
 CSS
 BOOTSTRAP
